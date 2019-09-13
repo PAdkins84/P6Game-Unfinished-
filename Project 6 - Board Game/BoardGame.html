@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="gridtest.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Board Game</title>
+</head>
+<body class="bgImg">
+
+<div id="gameInst">
+    <div class="inst col-6">
+    <h1>Square Off Instructions</h1>
+    <div class="mb-5"><img class="playerInst" src="img/testava.png"><img class="playerInst" src="img/testava2.png"></div>
+    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+    <button id="startBtn" class="btn-cust mt-4">Start Game</button>
+    </div>
+</div>
+
+<div id="startGame">
+    <div class="squareOff text-center mt-5"><img src="img/arcade.regular.png"></div>
+
+<div id="squareOff">
+    <div id="playerOneSB" class="stats mr-5">
+        <img class="playerHeader d-block" src="img/player1.png">
+        <img class="invisible" id="displayWeapon" src="" />
+        <img class="player-img" src="img/testava.png"/>
+        <h4 class="">Health: <span id="p1Health"></span></h3>
+        <h4 class="">Weapon: <span id="p1Weapon"></span></h3>
+        <h4 class="">Damage: <span id="p1Damage"></span></h3>
+        <h3 id="playerOne-turn" class="turn">Your Turn!</h2>
+        <button id="attackP1" class="fightTurn attackBtn mt-2 mb-2">Attack</button>
+        <button id="defendP1" class="fightTurn defendBtn">Defend</button>
+    </div>
+    <div class="gameBoard">
+    <div class="grid-container" id="grid-container"></div>
+    </div>
+    <div id="playerTwoSB" class="stats ml-5">
+        <img class="playerHeader d-block" src="img/player2.png">
+        <img class="invisible" id="displayWeapon" src="" />
+        <img class="player-img" src="img/testava2.png"/>
+        <h4>Health: <span id="p2Health"></span></h3>
+        <h4>Weapon: <span id="p2Weapon"></span></h3>
+        <h4 class="">Damage: <span id="p2Damage"></span></h3>
+        <h3 id="playerTwo-turn" class="turn">Your Turn!</h2>
+        <button id="attackP2" class="fightTurn2 attackBtn mt-2 mb-2">Attack</button>
+        <button id="defendP2" class="fightTurn2 defendBtn">Defend</button>
+      </div>
+    </div>
+    <!-- <div class="weapons text-center"><img class="avatar" src="img/testava.png"><img class="sword" src="img/shovel.png"><img class="sword" src="img/sword.png"><img class="sword" src="img/axe.png"><img class="potion" src="img/spell.png"></div> -->
+
+    <div id="winner">
+        <div class="inst col-6">
+        <h1>Player Wins!</h1>
+        <div class="mb-5"><img class="playerInst" src="img/testava.png"><img class="playerInst" src="img/testava2.png"></div>
+        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+        <button id="startBtn" class="btn-cust mt-4" value="Refresh Page" onClick="window.location.reload();">Start New Game</button>
+        </div>
+    </div>
+
+</div>
+    
+
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="scripts.js"></script>
+</body>
+</html>

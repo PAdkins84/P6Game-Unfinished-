@@ -1,0 +1,200 @@
+* {
+  font-family: monospace;
+}
+
+.bgImg {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+}
+
+.squareOffBg {
+  background-image: url(img/bgOp.jpg);
+  background-size: cover;
+}
+
+.turn {
+  color: rgb(146, 218, 252);
+  background-color: rgba(0, 0, 0, 0.829);
+  border: 2px solid black;
+}
+
+#gameInst {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.911);
+  max-width: 1420px;
+  min-height: 780px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+
+
+  text-align: center;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.btn-cust {
+  background-color: rgb(73, 191, 247);
+  border: 2px solid white;
+  color: white;
+}
+
+.inst {
+  margin: 0 auto;
+  position: absolute;
+}
+
+p {
+  margin-bottom: 3px;
+}
+
+#squareOff {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    border: 2px solid black;
+    max-width: 600px;
+    max-height: 600px;
+    position: relative;
+    grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+    margin: 10px auto;
+    background-color: rgb(73, 191, 247);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-top: 20px;
+  }
+
+  .grid-item {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* .grid-item:hover {
+    background-color: red;
+  } */
+
+  .avatar {
+    max-width: 65px;
+    max-height: 65px;
+  }
+
+  .potion {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .weapons {
+    display: block;
+  }
+
+  .stats {
+    border: 2px solid #222;
+    background: rgb(73, 191, 247);
+    margin: auto 5px;
+    padding: 15px;
+    height: 200%;
+    width: 280px;
+    min-height: 450px;
+    display: inline-block;
+  }
+
+  .player-img {
+    height: 100px;
+    width: 100px;
+    margin: 25px 0 25px 0;
+  }
+
+  .playerHeader {
+    margin: 0 auto;
+  }
+
+  /* -- Players -- */
+  .player1, .playerOne {
+    background-image: url(img/testava.png);
+    max-width: 65px;
+    max-height: 65px;
+    background-size: contain;
+  }
+
+  .player2, .playerTwo {
+    background-image: url(img/testava2.png);
+    /* filter: invert(100%); */
+    max-width: 65px;
+    max-height: 65px;
+    background-size: contain;
+  }
+
+  #attack1, #defend1, #attack2, #defend2 {
+    background-color: white;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+  }
+  
+/* -- Weapons (To be named) -- */
+.weaponOne {
+  background-image: url(img/axe.png);
+  background-size: contain;
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.weaponTwo {
+  background-image: url(img/sword.png);
+  background-size: contain;
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.weaponThree {
+  background-image: url(img/spell.png);
+  background-size: contain;
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.weaponFour  {
+  background-image: url(img/shovel.png);
+  background-size: contain;
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.tree {
+  background-image: url(img/tree.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.turn {
+  max-width: 15000px;
+  margin: 0 auto;
+}
+
+#winner {
+  background: yellow;
+  margin: 0 auto;
+  margin-top: 150px;
+}
